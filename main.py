@@ -4,7 +4,7 @@ from threading import Thread
 import os
 
 # 1. Murad müəllimdən aldığın API Token-i bura yazacaqsan
-TOKEN = 'API_KEY_BURA_YAZILACAQ'
+TOKEN = '8661049419:AAG1uGDmFEE97yUe8SrUU3gK76qsyTaCXwg'
 bot = telebot.TeleBot(TOKEN)
 
 # 2. RENDER-DƏ OYAQ QALMAQ ÜÇÜN VEB SERVER (Flask)
