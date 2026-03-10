@@ -1,11 +1,13 @@
 import telebot
 from flask import Flask
 from threading import Thread
-import os
+import os # Bu mütləq olmalıdır!
 
-# 1. Murad müəllimdən aldığın API Token-i bura yazacaqsan
-TOKEN = '8661049419:AAG1uGDmFEE97yUe8SrUU3gK76qsyTaCXwg'
+# 1. Tokeni Render-in 'Environment Variables' hissəsindən oxuyur
+TOKEN = os.environ.get('BOT_TOKEN') 
 bot = telebot.TeleBot(TOKEN)
+
+# ... (qalan kod eynidir)
 
 # 2. RENDER-DƏ OYAQ QALMAQ ÜÇÜN VEB SERVER (Flask)
 app = Flask('')
